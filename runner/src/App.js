@@ -5,7 +5,7 @@ import User from './components/User';
 function App(){
   return (
     <div className="container">
-      <Navbar title="User appferdrdrdrd"/>
+      <Navbar title="User sdfsdfsdf"/>
       <User/>
     </div>
   );
