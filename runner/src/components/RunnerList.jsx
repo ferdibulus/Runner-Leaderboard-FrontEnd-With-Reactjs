@@ -1,16 +1,17 @@
 import React, { Component } from 'react'
-import runnersService from './services/runnersService';
+import runnersService from '../services/runnersService';
 import {Table} from 'react-bootstrap';
-export default class RunnerList extends Component {
-    constructor(){
+class RunnerList extends Component {
+    constructor(props){
+      super(props);
         this.state = {
-            runners:[]
+            Runners: []
         }
     }
 
     componentDidMount(){
-        runnersService.getRunners().then((response) => {
-            this.setState({ runners: response.data})
+        runnersService.getRunners().then((res) => {
+            this.setState({ Runners: res.json})
         });
     }
     render() {
@@ -30,7 +31,7 @@ export default class RunnerList extends Component {
                   </thead>
                   <tbody>
                     {
-                    this.state.runners.map(
+                    this.state.Runners.map(
                       runner =>
 
                       <tr key={runner.id}>
@@ -49,3 +50,4 @@ export default class RunnerList extends Component {
         )
     }
 }
+export default RunnerList;
