@@ -1,20 +1,22 @@
 import React, { Component } from 'react'
-//import runnersService from '../services/runnersService';
+// eslint-disable-next-line
+import runnersService from '../services/runnersService';
 import {Table} from 'react-bootstrap';
+import axios from 'axios';
 class RunnerList extends Component {
-    constructor(props){
-      super(props);
+    constructor(){
+      super();
         this.state = {
             Runners: []
         }
     }
-/*
+
     componentDidMount(){
-        runnersService.getRunners().then((res) => {
+        axios.get('http://localhost:8080/runners').then((res) => {
             this.setState({ Runners: res.data})
         });
     }
-  */
+  
     render() {
         return (
             <div>
