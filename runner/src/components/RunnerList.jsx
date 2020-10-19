@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import runnersService from '../services/runnersService';
+//import runnersService from '../services/runnersService';
 import {Table} from 'react-bootstrap';
 class RunnerList extends Component {
     constructor(props){
@@ -8,12 +8,13 @@ class RunnerList extends Component {
             Runners: []
         }
     }
-
+/*
     componentDidMount(){
         runnersService.getRunners().then((res) => {
-            this.setState({ Runners: res.json})
+            this.setState({ Runners: res.data})
         });
     }
+  */
     render() {
         return (
             <div>

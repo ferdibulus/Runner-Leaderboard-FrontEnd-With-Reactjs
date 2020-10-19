@@ -1,7 +1,7 @@
 import React, { Component } from 'react'
 import {Navbar} from 'react-bootstrap';
 import {Nav} from 'react-bootstrap';
-export default class Navbar extends Component {
+export default class Navbar1 extends Component {
     render() {
         return (
             <div>

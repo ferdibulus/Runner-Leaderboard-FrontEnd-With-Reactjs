@@ -1,11 +1,11 @@
 // eslint-disable-next-line
 import React, { Component } from 'react';
-import { Navbar } from 'react-bootstrap';
+import Navbar1  from './components/Navbar1';
 import RunnerList from './components/RunnerList';
 function App(){
   return (
     <div className='container'>
-     <Navbar/>
+     <Navbar1/>
      <RunnerList/>           
     </div>
   );
