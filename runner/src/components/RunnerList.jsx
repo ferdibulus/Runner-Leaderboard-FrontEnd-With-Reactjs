@@ -38,9 +38,10 @@ class RunnerList extends Component {
                       runner =>
 
                       <tr key={runner.id}>
+                      <td>{runner.id}</td>
                       <td>{runner.runnerName}</td>
-                      <td>{runner.runnerSex}</td>
                       <td>{runner.runnerAge}</td>
+                      <td>{runner.runnerSex}</td>
                       <td>{runner.runnerDistance}</td>
                       <td>{runner.runnerAvgPace}</td>
                       <td><td>{runner.runnerTotalTime}</td></td>
