@@ -44,7 +44,7 @@ class RunnerList extends Component {
                       <td>{runner.runnerSex}</td>
                       <td>{runner.runnerDistance}</td>
                       <td>{runner.runnerAvgPace}</td>
-                      <td><td>{runner.runnerTotalTime}</td></td>
+                      <td>{runner.runnerTotalTime}</td>
                     </tr>
                     )
                   }
